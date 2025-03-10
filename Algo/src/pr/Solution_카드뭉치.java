@@ -32,6 +32,9 @@ public class Solution_카드뭉치 {
 				break;
 			}
 		}
-		return goalDeque.isEmpty() ? "Yes" : "No";  
+//		return goalDeque.isEmpty() ? "Yes" : "No";  
+		
+		if(goalDeque.isEmpty()) return "Yes";
+		else  return "No";
     }
 }
