@@ -49,5 +49,3 @@ select job_id, sum(salary) from employees group by job_id;
 select job_id, sum(salary) from employees group by job_id with rollup;
 select department_id, job_id, sum(salary) from employees group by department_id, job_id;
 select department_id, job_id, sum(salary) from employees group by department_id, job_id with rollup;
-
-
