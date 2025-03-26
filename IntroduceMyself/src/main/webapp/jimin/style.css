@@ -1,0 +1,142 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 40px; /* 이미지와 텍스트 사이 간격 추가 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EEF1DA; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: #C7D9DD;
+    color:#555;
+    padding: 40px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    background-color: #ADB2D4;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;  /* 한 줄이 너무 길어지면 자동 줄 바꿈 */
+    justify-content: center; /* 가운데 정렬 */
+    gap: 20px;  /* 이미지 간격 조정 */
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100%;  
+    max-width: 250px; /* 너무 커지지 않도록 제한 */
+    height: auto;  
+    border-radius: 15px; /* 둥근 모서리 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 텍스트 컨테이너 */
+.text-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    height: auto; /* 높이 자동 조정 */
+}
+
+/* 텍스트 스타일 */
+.text-container p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* 이미지 스타일 */
+.text-container img {
+    width: 100%; /* 컨테이너에 맞게 크기 조정 */
+    max-width: 250px; /* 너무 크지 않도록 제한 */
+    height: auto; /* 비율 유지 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    margin-bottom: 15px;
+}
+
+/* 글자 스타일 */
+.text-container p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 이미지와 캡션 가운데 정렬 */
+    text-align: center;
+    max-width: 200px; /* 이미지 최대 크기 제한 */
+}
+
+figure img {
+    width: 100%;  
+    max-width: 180px; /* 너무 커지지 않도록 제한 */
+    height: auto;  
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+}
