@@ -17,7 +17,7 @@ List<BookDto> bookList = (List<BookDto>) request.getAttribute("bookList");
 		</thead>
 		<tbody>
 <%
-for( BookDto bookDto : bookList) {
+	for( BookDto bookDto : bookList) {
 %>
 			<tr><td><a href="/BookManager/books/detail?bookId=<%= bookDto.getBookId() %>"><%= bookDto.getBookId() %></a></td><td><%= bookDto.getBookName() %></td><td><%= bookDto.getPublisher() %></td><td><%= bookDto.getPrice() %></td></tr>
 <%
